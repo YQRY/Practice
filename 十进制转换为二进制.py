@@ -15,5 +15,5 @@ def Dec2Bin(dec):
 
     return result
 
-
-print(Dec2Bin(62))
+dec = int(input('请输入一个整数：'))
+print(Dec2Bin(dec))
