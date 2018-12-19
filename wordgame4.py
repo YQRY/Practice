@@ -21,7 +21,7 @@ while (guess != secret) and (times > 0):
         else:
             print('小了')
         if times > 0:
-            print('再试一次吧',end='')
+            print('再试一次吧:',end='')
         else:
             print('机会用光了！')
 print('游戏结束！')
