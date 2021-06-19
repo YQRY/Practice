@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace 整除7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Count = 0;
+            int sum = 0;
+            for(int i = 1; i<=1000; i++)
+            {
+                if (i % 7 == 0)
+                {
+                    sum += i;
+                    Count ++;
+                     Write("{0} ",i);  //注意这种表达方式
+                }
+                if(Count == 5)
+                {
+                    Write($"和为：{sum}");
+                    sum = 0;
+                    Count = 0;
+                    WriteLine();
+                }
+            }
+            ReadKey();
+        }
+    }
+}
